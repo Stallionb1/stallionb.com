@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stallion.B</title>
+
+  <!-- Icons & Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <section id="header">
+    <a href="#"><img src="images/logo.png" class="Logo" alt="Stallion.B logo"/></a>
+
+    <div>
+      <ul id="navbar">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+        <!-- Cart link with badge -->
+        <li id="lg-cart">
+          <!-- CHANGED: link goes to Cart.html instead of #cart -->
+          <a href="cart.html" class="cart-link"><!-- CHANGED -->
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-badge" class="cart-badge" aria-label="Cart items">0</span>
+          </a>
+        </li>
+
+        <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+      </ul>
+    </div>
+
+    <div id="mobile">
+      <!-- CHANGED: link goes to Cart.html instead of #cart -->
+      <a href="cart.html" class="cart-link"><!-- CHANGED -->
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-badge-mobile" class="cart-badge">0</span>
+      </a>
+      <i id="bar" class="fas fa-outdent"></i>
+    </div>
+  </section>
+
+  <!-- ================ HERO ================ -->
+  <section id="hero">
+    <h4>Redefining Comfort</h4>
+    <h2>Branded Socks Hub</h2>
+    <h1>Flat 10% OFF</h1>
+    <p>Stallion.B is your everyday buddy</p>
+    <button onclick="location.href='shop.html'">Shop Now</button>
+  </section>
+
+  <!-- ================ FEATURES ================ -->
+  <section id="feature" class="section-p1">
+    <div class="fe-box">
+      <img src="images/quality.png" alt="High quality icon"/>
+      <h6>High Quality</h6>
+    </div>
+    <div class="fe-box">
+      <img src="images/eco.png" alt="Online order icon"/>
+      <h6>Online Order</h6>
+    </div>
+    <div class="fe-box">
+      <img src="images/care.png" alt="Customer care icon"/>
+      <h6>Customer Care</h6>
+    </div>
+  </section>
+
+  <!-- ================ PRODUCTS ================ -->
+  <section id="product1" class="section-p1">
+    <h2>Premium Collection</h2>
+    <p>All Imported Stuff Guaranteed</p>
+
+    <div class="pro-container">
+      <!-- Product 1 -->
+      <div class="pro">
+        <img src="images/quarter1.png" alt="Quarter socks product 1"/>
+        <div class="des">
+          <span>New Balance</span>
+          <h4>Standard Pack of 3 (Same Color)</h4>
+          <h5>Quarter Socks Pair</h5>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <h4>300 Rs.</h4>
+        </div>
+        <!-- CHANGED: add data-* so cartbadge.js can add this product -->
+        <a href="#"
+           class="cart add-to-cart"
+           aria-label="Add to cart"
+           data-id="quarter-1"
+           data-title="Standard Pack of 3 (Same Color)"
+           data-price="300"
+           data-image="Images/Quarter 1.png"
+           data-variant="Quarter Socks Pair"
+           data-qty="1"><i class="fa-solid fa-add"></i></a><!-- CHANGED -->
+      </div>
+
+      <!-- Product 2 -->
+      <div class="pro">
+        <img src="images/quarter2.png" alt="Quarter socks product 2"/>
+        <div class="des">
+          <span>New Balance</span>
+          <h4>Standard Pack of 3 (Same Color)</h4>
+          <h5>Quarter Socks Pair</h5>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <h4>320 Rs.</h4>
+        </div>
+        <!-- CHANGED -->
+        <a href="#"
+           class="cart add-to-cart"
+           aria-label="Add to cart"
+           data-id="quarter-2"
+           data-title="Standard Pack of 3 (Same Color)"
+           data-price="320"
+           data-image="Images/Quarter 2.png"
+           data-variant="Quarter Socks Pair"
+           data-qty="1"><i class="fa-solid fa-add"></i></a><!-- CHANGED -->
+      </div>
+
+      <!-- Product 3 -->
+      <div class="pro">
+        <img src="images/ankle1.png" alt="Ankle socks product 1"/>
+        <div class="des">
+          <span>pepco</span>
+          <h4>Standard Pack of 3 (Same Color)</h4>
+          <h5>Ankle Socks Pair</h5>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <h4>350 Rs.</h4>
+        </div>
+        <!-- CHANGED -->
+        <a href="#"
+           class="cart add-to-cart"
+           aria-label="Add to cart"
+           data-id="ankle-1"
+           data-title="Standard Pack of 3 (Same Color)"
+           data-price="350"
+           data-image="Images/Ankle 1.png"
+           data-variant="Ankle Socks Pair"
+           data-qty="1"><i class="fa-solid fa-add"></i></a><!-- CHANGED -->
+      </div>
+
+      <!-- Product 4 -->
+      <div class="pro">
+        <img src="images/ankle2.png" alt="Ankle socks product 2"/>
+        <div class="des">
+          <span>pepco</span>
+          <h4>Standard Pack of 3 (Same Color)</h4>
+          <h5>Ankle Socks Pair</h5>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <h4>350 Rs.</h4>
+        </div>
+        <!-- CHANGED -->
+        <a href="#"
+           class="cart add-to-cart"
+           aria-label="Add to cart"
+           data-id="ankle-2"
+           data-title="Standard Pack of 3 (Same Color)"
+           data-price="350"
+           data-image="Images/Ankle 2.png"
+           data-variant="Ankle Socks Pair"
+           data-qty="1"><i class="fa-solid fa-add"></i></a><!-- CHANGED -->
+      </div>
+
+      <!-- Product 5 -->
+      <div class="pro">
+        <img src="images/lowcut1.png" alt="Low cut socks product 1"/>
+        <div class="des">
+          <span>Wrangler</span>
+          <h4>Standard Pack of 3 (Same Color)</h4>
+          <h5>Low Cut Socks Pair</h5>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <h4>300 Rs.</h4>
+        </div>
+        <!-- CHANGED -->
+        <a href="#"
+           class="cart add-to-cart"
+           aria-label="Add to cart"
+           data-id="lowcut-1"
+           data-title="Standard Pack of 3 (Same Color)"
+           data-price="300"
+           data-image="Images/Low Cut 1.png"
+           data-variant="Low Cut Socks Pair"
+           data-qty="1"><i class="fa-solid fa-add"></i></a><!-- CHANGED -->
+      </div>
+
+      <!-- Product 6 -->
+      <div class="pro">
+        <img src="images/lowcut2.png" alt="Low cut socks product 2"/>
+        <div class="des">
+          <span>Wrangler</span>
+          <h4>Standard Pack of 3 (Same Color)</h4>
+          <h5>Low Cut Socks Pair</h5>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <h4>300 Rs.</h4>
+        </div>
+        <!-- CHANGED -->
+        <a href="#"
+           class="cart add-to-cart"
+           aria-label="Add to cart"
+           data-id="lowcut-2"
+           data-title="Standard Pack of 3 (Same Color)"
+           data-price="300"
+           data-image="Images/Low Cut 2.png"
+           data-variant="Low Cut Socks Pair"
+           data-qty="1"><i class="fa-solid fa-add"></i></a><!-- CHANGED -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ BANNERS ================ -->
+  <section id="banner" class="section-m1">
+    <h4>Grab Your Offer Now!!!</h4>
+    <h2>Buy 3 get 1 <span>Free</span> On All Stock Items</h2>
+    <button class="normal" onclick="location.href='shop.html'">Explore More</button>
+  </section>
+
+  <section id="sm-banner" class="section-p1">
+    <div class="banner-box">
+      <h4>Ideal Fit</h4>
+      <h2>Sports Wear</h2>
+      <button class="white" onclick="location.href='shop.html'">Learn More</button>
+    </div>
+    <div class="banner-box banner-box2">
+      <h4>Best Deals</h4>
+      <h2>Formal Trends</h2>
+      <button class="white" onclick="location.href='shop.html'">Learn More</button>
+    </div>
+  </section>
+
+  <!-- ================ NEWSLETTER ================ -->
+  <section id="news-letter" class="section-p1 section-m1">
+    <div class="new-text">
+      <h4>Sign up to stay updated</h4>
+      <p>Get updates in your emails for <span>new cool stuff</span></p>
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Your email address"/>
+      <button class="normal">Sign Up</button>
+    </div>
+  </section>
+
+  <!-- ================ FOOTER ================ -->
+  <footer class="section-p1">
+    <div class="col">
+      <img src="images/logo.png" class="Logo" alt="Stallion.B logo"/>
+    </div>
+    <div class="col">
+      <h4>About</h4>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms and Conditions</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="col">
+      <h4>My Cart</h4>
+      <a href="cart.html">View Cart</a><!-- CHANGED -->
+      <a href="contact.html">Help</a>
+    </div>
+    <div class="col">
+      <h4>Payment Methods</h4>
+      <div class="payment-logos">
+        <img src="images/visa.png" alt="Visa"/>
+        <img src="images/jazzcash.png" alt="JazzCash"/>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>©2026 Stallion.B All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="cartbadge.js"></script>
+
+</body>
+</html>
